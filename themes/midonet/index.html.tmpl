@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><TMPL_VAR name></title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="planet.css" />
+    <link rel="shortcut icon" href="http://www.midonet.org/mido.ico" type="image/x-icon" />
+    <link rel="alternate" type="application/atom+xml" title="<TMPL_VAR name> Atom 1.0" href="http://planet.midonet.org/atom.xml" />
+    <link rel="alternate" type="application/xml" title="<TMPL_VAR name> RSS 2.0" href="http://planet.midonet.org/rss20.xml" />
+    <meta name="generator" content="<TMPL_VAR generator ESCAPE="HTML">">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <header class="pageheader">
+      <div class="topbutton">
+        <script async defer src="http://slack.midonet.org/slackin.js"></script>
+        <a class="github-button" href="https://github.com/midonet/midonet" data-count-href="/midonet/midonet/stargazers" data-count-api="/repos/midonet/midonet#stargazers_count">Star</a>
+        <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+      </div>
+      <div class="wrapper">
+        <a href="http://www.midonet.org/"><h1>MidoNet</h1></a>
+        <nav>
+          <a href="http://www.midonet.org/#help">Help</a>
+          <a href="http://www.midonet.org/#quickstart">Quick Start</a>
+          <a href="http://www.midonet.org/#resources">Resources</a>
+          <a href="http://blog.midonet.org">Blog</a>
+          <a href="http://wiki.midonet.org">Wiki</a>
+          <a href="http://docs.midonet.org">Docs</a>
+          <a href="http://www.midonet.org/midonet-tv.php">TV</a>
+          <a href="http://planet.midonet.org">Planet</a>
+        </nav>
+      </div>
+    </header>
+      
+    <div class="container">
+      <div class="row">
+
+        <main class="col-md-9">
+<TMPL_LOOP Items>
+  <TMPL_IF new_date>
+    <TMPL_UNLESS __FIRST__>
+            ### End <div class="channelgroup">
+            </div>
+          ### End <div class="daygroup">
+          </div>
+    </TMPL_UNLESS> ### __FIRST__
+          <div class="daygroup">
+            <h1 class="h2 daygroup-title"><TMPL_VAR new_date></h1>
+  </TMPL_IF> ### new_date
+  <TMPL_IF new_channel>
+    <TMPL_UNLESS new_date>
+            ### End <div class="channelgroup">
+            </div>
+    </TMPL_UNLESS> ### new_date
+            <div class="channelgroup">
+    <TMPL_IF channel_face>
+              <a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_name>">
+                <img class="face" src="images/<TMPL_VAR channel_face ESCAPE="HTML">" width="<TMPL_VAR channel_facewidth ESCAPE="HTML">" height="<TMPL_VAR channel_faceheight ESCAPE="HTML">" alt="<TMPL_VAR channel_name>" />
+              </a>
+    </TMPL_IF>
+              <h2 class="channelgroup-title"><a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">"><TMPL_VAR channel_name></a></h2>
+  </TMPL_IF> ### new_channel
+
+              <article id="<TMPL_VAR id>"<TMPL_IF channel_language> lang="<TMPL_VAR channel_language>"</TMPL_IF>>
+                <header class="post-header">
+                  <TMPL_IF title>
+                  <h3 class="post-title"<TMPL_IF title_language> lang="<TMPL_VAR title_language>"</TMPL_IF>><a href="<TMPL_VAR link ESCAPE="HTML">" rel="bookmark"><TMPL_VAR title></a></h3>
+                  </TMPL_IF> ### title
+                  <small class="post-meta">
+                    <TMPL_IF author_name>by <TMPL_VAR author_name ESCAPE="HTML"> at </TMPL_IF><TMPL_VAR date><TMPL_IF category>under <TMPL_VAR category></TMPL_IF>
+                  </small>
+                </header>
+                <section class="post-content"<TMPL_IF content_language> lang="<TMPL_VAR content_language>"</TMPL_IF>>
+                  <p><TMPL_VAR content></p>
+                  <hr />
+                </section>
+              </article>
+
+  <TMPL_IF __LAST__>
+            ### End <div class="channelgroup">
+            </div>
+          ### End <div class="daygroup">
+          </div>
+  </TMPL_IF> ### __LAST__
+</TMPL_LOOP> ### Items
+          </main>
+          
+          <aside class="col-md-3">
+          <div>
+            <h2>About</h2>
+            Planet MidoNet brings the thoughts of operators, developers and other contributors together in one place. (TODO: add link to howto-add-blog)
+          </div>
+          <div>
+            <h2>Feeds</h2>
+            <ul class="list-unstyled">
+              <li><a href="/atom.xml">Atom 1.0 Feed</a></li>
+              <li><a href="/rss10.xml">RSS 1.0 Feed</a></li>
+              <li><a href="/rss20.xml">RSS 2.0 Feed</a></li>
+              <li><a href="/opml.xml">OPML Blogroll </a></li>
+              <li><a href="/foafroll.xml">FOAF Blogroll</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Blogroll</h2>
+            <ul class="list-unstyled">
+              <TMPL_LOOP Channels>
+              <li>
+                <a href="<TMPL_VAR url ESCAPE="HTML">" title="subscribe"><img src="images/feed-icon-10x10.png" alt="(feed)" /></a> <a <TMPL_IF link>href="<TMPL_VAR link ESCAPE="HTML">" </TMPL_IF><TMPL_IF message>class="message" title="<TMPL_VAR message ESCAPE="HTML">"</TMPL_IF><TMPL_UNLESS message>title="<TMPL_VAR title_plain ESCAPE="HTML">"</TMPL_UNLESS>><TMPL_VAR name></a>
+              </li>
+              </TMPL_LOOP> ### Channels
+            </ul>
+          </div>
+          <div>
+            <strong>Last updated:</strong><br />
+            <TMPL_VAR date><br />
+            <em>All times are UTC.</em><br />
+          </div>
+          <div>
+            Powered by:<br />
+            <a href="http://www.intertwingly.net/code/venus/"><img src="images/planet.png" width="80" height="15" alt="Planet" /></a>
+          </div>
+        </aside>
+
+      </div><!--row-->
+    </div><!--container-->
+
+  </body>
+
+</html>

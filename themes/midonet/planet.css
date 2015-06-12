@@ -1,0 +1,155 @@
+/* GENERAL */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+a:hover {
+  color: #21bde4;
+}
+::selection {
+  color: #000;
+  background: #d6edff;
+  text-shadow: none;
+}
+/* end: GENERAL */
+/* TOP NAVIGATION (HEADER) */
+header.pageheader {
+  display: block;
+  height: 200px;
+  width: 100%;
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  background: white url(http://www.midonet.org/i/header.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 50px;
+}
+@media (min-width: 992px) {
+  header.pageheader {
+    padding-top: 70px;
+  }
+}
+header.pageheader h1 {
+  position: relative;
+  margin: 0 auto;
+  height: 58px;
+  width: 201px;
+  text-indent: -999em;
+  background: url('http://www.midonet.org/i/logo.png') no-repeat;
+}
+@media (min-width: 992px) {
+  header.pageheader h1 {
+    width: 238px;
+    margin: 0;
+    margin-left: 70px;
+  }
+}
+.topbutton {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  text-align: center;
+  padding: 6px 10px 9px;
+}
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+nav {
+  display: inline-block;
+  margin: 20px;
+  font-size: 16px;
+  background: rgba(0,0,0,.3);
+  text-align: center;
+  padding: 6px 10px 9px;
+  border-radius: 30px;
+  box-shadow: 0px 1px 0px rgba(255,255,255,.2);
+}
+@media (min-width: 992px) {
+  nav {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    margin: 0;
+  }
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-right: 1px solid #FFF;
+  display: inline-block;
+  line-height: 11px;
+  padding: 0 16px;
+  margin:0px;
+  padding-left:10px;
+}
+nav a:last-child {
+  border-right: none;
+}
+nav a:hover {
+  color: #fff;
+}
+/* end: TOP NAVIGATION (HEADER) */
+/* MAIN */
+section.post-content * {
+  max-width: 100%;
+}
+main .face {
+  float: right;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+header.post-header {
+  margin-bottom: 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+}
+.channelgroup-title a, .post-title a {
+  transition: color ease .3s;
+}
+.daygroup-title {
+  font-weight: 300;
+}
+.channelgroup-title {
+  font-weight: 500;
+}
+.post-title {
+  margin-top: 0;
+  font-weight: 700;
+}
+header .post-meta {
+  color: #9eabb3;
+}
+.post-content h1 {
+  font-size: 24px;
+}
+.post-content h2 {
+  font-size: 20px;
+}
+.post-content h3 {
+  font-size: 16px;
+}
+.post-content h4 {
+  font-size: 14px;
+}
+.post-content h5 {
+  font-size: 13px;
+}
+.post-content h6 {
+  font-size: 12px;
+}
+/* end: MAIN */
+/* SIDE NAVIGATION (ASIDE) */
+aside div {
+  margin-bottom: 20px;
+  max-width: 200px;
+}
+/* end: SIDE NAVIGATION (ASIDE) */
