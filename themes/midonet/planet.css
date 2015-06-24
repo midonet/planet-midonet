@@ -23,7 +23,12 @@ header.pageheader {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  padding-top: 5px;
+}
+@media (min-width: 768px) {
+  header.pageheader {
   padding-top: 50px;
+  }
 }
 @media (min-width: 992px) {
   header.pageheader {
@@ -46,13 +51,22 @@ header.pageheader h1 {
   }
 }
 .topbutton {
-  position: fixed;
   top: 5px;
-  right: 5px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
   z-index: 999;
   text-align: center;
   padding: 6px 10px 9px;
 }
+@media (min-width: 768px) {
+  .topbutton {
+    position: fixed;
+    right: 5px;
+    left: auto;
+  }
+}
+
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
@@ -153,3 +167,4 @@ aside div {
   margin-bottom: 20px;
 }
 /* end: SIDE NAVIGATION (ASIDE) */
+
