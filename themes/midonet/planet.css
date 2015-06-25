@@ -119,6 +119,7 @@ nav a:hover {
 /* MAIN */
 section.post-content * {
   max-width: 100%;
+  word-wrap: break-word;
 }
 main .face {
   float: right;
