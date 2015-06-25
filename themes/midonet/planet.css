@@ -25,11 +25,6 @@ header.pageheader {
   background-size: cover;
   padding-top: 5px;
 }
-@media (min-width: 768px) {
-  header.pageheader {
-  padding-top: 50px;
-  }
-}
 @media (min-width: 992px) {
   header.pageheader {
     padding-top: 70px;
@@ -59,19 +54,28 @@ header.pageheader h1 {
   text-align: center;
   padding: 6px 10px 9px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .topbutton {
     position: fixed;
     right: 5px;
     left: auto;
   }
 }
-
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
   position: relative;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .wrapper {
+    padding-top: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .wrapper {
+    padding-top: 0;
+  }
 }
 nav {
   display: inline-block;
@@ -167,4 +171,3 @@ aside div {
   margin-bottom: 20px;
 }
 /* end: SIDE NAVIGATION (ASIDE) */
-
