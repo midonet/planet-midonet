@@ -247,3 +247,16 @@ footer ul.social li.twitter .sicon {
 	background: url("http://www.midonet.org/i/social/twitter-32.png") no-repeat center rgba(0,0,0,0.2);
 }
 /* end: BOTTOM NAVIGATION (FOOTER) */
+/* OTHERS / MISC */
+#toTop{
+	opacity:0.25;
+	display:none;
+	position:fixed;
+	width:64px;
+	height:64px;
+	bottom:80px;
+	right:40px;
+	vertical-align:middle;
+	text-align:center;
+}
+/* end: OTHERS / MISC */
