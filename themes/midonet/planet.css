@@ -154,3 +154,93 @@ aside div {
   margin-bottom: 20px;
 }
 /* end: SIDE NAVIGATION (ASIDE) */
+/* BOTTOM NAVIGATION (FOOTER) */
+footer {
+	margin-top: 140px;
+	padding-bottom: 50px;
+}
+footer .top {
+	border-bottom: 1px solid #e6e4e4;
+	padding-bottom: 6px;
+	font-size: 12px;
+	line-height: 28px;
+	font-weight: 400;
+	color: #8d8d8d;
+	text-align: right;
+	margin-bottom: 10px;
+}
+footer .top a {
+	color: #8d8d8d;
+	display: inline-block;
+	padding-left: 20px;
+	text-decoration: none;
+}
+footer .top .logo {
+	display: block;
+	float: left;
+	text-align: left;
+	margin-top: 2px;
+	text-indent: -9999px;
+	width: 90px;
+	height: 22px;
+	background: url("http://www.midonet.org/i/logo-footer.png");
+}
+footer ul {
+	float: left;
+	margin-right: 100px;
+	padding: 0;
+	text-align: initial;
+	list-style: none;
+}
+
+footer ul.social li
+{
+	height:32px;
+}
+
+footer ul li a {
+	color: #8d8d8d;
+	font-size: 13px;
+	line-height: 28px;
+	text-decoration: none;
+}
+footer ul.social {
+	margin-right: 0;
+	float: right;
+}
+footer ul.social li a {
+	font-size: 12px;
+}
+footer ul.social .twitter a {
+	color: #47c8f5;
+}
+footer ul.social .facebook a {
+	color: #4875b4;
+}
+footer ul.social .github a {
+	color: #000;
+}
+
+footer ul.social li .sicon {
+	vertical-align:middle;
+	width:24px;
+	height:24px;
+	margin-right:4px;
+	display:inline-block;
+	//background-color:#CCC;
+	-webkit-transition:background-color 1s;
+	-moz-transition:background-color 1s;
+	transition:background-color 1s;
+}
+
+footer ul.social li.github .sicon {
+	background: url("http://www.midonet.org/i/social/github-32.png") no-repeat center rgba(0,0,0,0.2);
+}
+
+footer ul.social li.facebook .sicon {
+	background: url("http://www.midonet.org/i/social/facebook-32.png") no-repeat center rgba(0,0,0,0.2);
+}
+footer ul.social li.twitter .sicon {
+	background: url("http://www.midonet.org/i/social/twitter-32.png") no-repeat center rgba(0,0,0,0.2);
+}
+/* end: BOTTOM NAVIGATION (FOOTER) */
