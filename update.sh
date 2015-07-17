@@ -6,10 +6,10 @@ git reset --hard origin/master
 # update cronjob in case it changed
 # note: crond reloads changed config automatically
 # (use cp instead of ln/mv to avoid SELinux issues)
-cp -f cronjob           /etc/cron.d/planet
+cp --remove-destination cronjob           /etc/cron.d/planet
 # update httpd config in case it changed
 # (use cp instead of ln/mv to avoid SELinux issues)
-cp -f httpd-planet.conf /etc/httpd/conf.d/planet.conf
+cp --remove-destination httpd-planet.conf /etc/httpd/conf.d/planet.conf
 systemctl reload httpd
 # Update the planet
 /bin/python /root/planet-midonet/planet.py /root/planet-midonet/midonet.ini
