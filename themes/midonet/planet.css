@@ -148,6 +148,9 @@ header .post-meta {
 .post-content h6 {
   font-size: 12px;
 }
+main .daygroup:last-of-type .channelgroup:last-of-type article:last-of-type hr {
+	visibility: hidden;
+}
 /* end: MAIN */
 /* SIDE NAVIGATION (ASIDE) */
 aside div {
