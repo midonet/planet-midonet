@@ -18,7 +18,7 @@ header.pageheader {
   width: 100%;
   line-height: 1;
   font-family: 'Open Sans', sans-serif;
-  background: white url(http://www.midonet.org/i/header.jpg) no-repeat center center;
+  background: white url(https://www.midonet.org/i/header.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -36,7 +36,7 @@ header.pageheader h1 {
   height: 58px;
   width: 201px;
   text-indent: -999em;
-  background: url('http://www.midonet.org/i/logo.png') no-repeat;
+  background: url('https://www.midonet.org/i/logo.png') no-repeat;
 }
 @media (min-width: 992px) {
   header.pageheader h1 {
@@ -186,7 +186,7 @@ footer .top .logo {
 	text-indent: -9999px;
 	width: 90px;
 	height: 22px;
-	background: url("http://www.midonet.org/i/logo-footer.png");
+	background: url("https://www.midonet.org/i/logo-footer.png");
 }
 footer ul {
 	float: left;
@@ -237,14 +237,14 @@ footer ul.social li .sicon {
 }
 
 footer ul.social li.github .sicon {
-	background: url("http://www.midonet.org/i/social/github-32.png") no-repeat center rgba(0,0,0,0.2);
+	background: url("https://www.midonet.org/i/social/github-32.png") no-repeat center rgba(0,0,0,0.2);
 }
 
 footer ul.social li.facebook .sicon {
-	background: url("http://www.midonet.org/i/social/facebook-32.png") no-repeat center rgba(0,0,0,0.2);
+	background: url("https://www.midonet.org/i/social/facebook-32.png") no-repeat center rgba(0,0,0,0.2);
 }
 footer ul.social li.twitter .sicon {
-	background: url("http://www.midonet.org/i/social/twitter-32.png") no-repeat center rgba(0,0,0,0.2);
+	background: url("https://www.midonet.org/i/social/twitter-32.png") no-repeat center rgba(0,0,0,0.2);
 }
 /* end: BOTTOM NAVIGATION (FOOTER) */
 /* OTHERS / MISC */
